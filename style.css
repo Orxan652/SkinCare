@@ -1,0 +1,1200 @@
+/*
+1. Huvudsida
+2. Ansiktsbehandling
+3. KemiskPeeling
+4. Lashlift
+5. Microneedling
+6. ISR
+7. Plasmapen
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Muli", sans-serif;
+  color: #454544;
+  letter-spacing: 0.02em;
+  line-height: 1.6;
+}
+
+body {
+  background-color: #eee;
+  overflow-x: hidden !important;
+}
+
+/*All Big containers here*/
+
+.bigcontainer-huvudsida {
+  width: 100vw;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: repeat(5, auto);
+}
+
+.big-container-ansikte {
+  display: grid;
+  grid-template-rows: repeat(6, auto);
+}
+
+.big-container-isr {
+
+}
+
+.big-container-plasmapen {
+
+}
+
+
+
+/*All containers here*/
+.container-1huvudsida {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: #eee;
+}
+
+.container-3huvudsida {
+  margin-bottom: 7rem;
+  display: grid;
+  width: 100%;
+  place-content: center;
+}
+
+.container-4huvudsida {
+  display: grid;
+  place-content: center;
+  width: 100%;
+}
+
+.container-5huvudsida {
+  display: grid;
+  width: 100%;
+  place-content: center;
+  margin-top: 9rem;
+}
+
+.container-3ansikte {
+  display: grid;
+  place-content: center;
+  width: 100%;
+  margin-bottom:8rem;
+}
+
+.container-4ansikte,
+.container-4kemiskpeeling,
+.container-4lashlift,
+.container-4microneedling,
+.container-4isr-1,
+.container-4isr-2,
+.container-4plasmapen-1, 
+.container-4plasmapen-2,
+.container-4plasmapen-3
+ {
+  display: grid;
+  place-content: center;
+  width: 100%;
+}
+
+
+
+.container-6ansikte {
+  justify-self: stretch;
+}
+
+.container-7ansikte {
+  width: 100%;
+  display: grid;
+  place-items: center;
+}
+
+.container-3kemiskpeeling,
+.container-3lashlift,
+.container-3microneedling,
+.container-3isr,
+.container-3plasmapen {
+  display: grid;
+  place-content: center;
+  width: 100%;
+  margin-bottom: 10rem;
+}
+
+.container-4kemiskpeeling {
+  margin-bottom: 10rem;
+}
+
+.container-4isr-1 {
+  margin-bottom:3rem;
+}
+
+.container-4plasmapen-1 {
+  margin-bottom:4rem;
+}
+
+.container-4plasmapen-3 {
+  margin-top:3rem;
+}
+/*All sections here*/
+.section-1huvudsida {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: repeat(4, auto);
+  max-width: 100%;
+}
+
+.section-2huvudsida {
+  max-width: 60vw;
+  width: 100%;
+  display: grid;
+  grid-template-rows: repeat(4, auto);
+  gap: 3rem;
+  place-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+}
+
+.section-3huvudsida {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 1.2rem;
+  max-width: 60vw;
+  width: 100%;
+  justify-content: start;
+  align-items: stretch;
+  font-size: 0.8rem;
+  align-content: stretch;
+}
+
+.section-4huvudsida {
+  height: 40vh;
+  width: 100%;
+  max-width: 60vw;
+  background-color: #f0f0f0;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: auto 1fr;
+  gap: 10px;
+}
+
+.section-3ansikte {
+  display: grid;
+  grid-template-rows: repeat(7, auto);
+  gap: 1rem;
+  width: 100%;
+  max-width: 60vw;
+  text-align: center;
+}
+
+.section-4ansikte {
+  display: grid;
+  width: 100%;
+  max-width: 60vw;
+  grid-template-rows: repeat(1fr, 6);
+  gap: 2rem;
+}
+
+.section-6ansikte {
+  display: grid;
+  grid-template-rows: repeat(4, auto);
+  width: 100%;
+  max-width: 60vw;
+}
+
+.section-3kemiskpeeling {
+  display: grid;
+  grid-template-rows: repeat(6, auto);
+  gap: 1rem;
+  width: 100%;
+  max-width: 60vw;
+  text-align: center;
+}
+
+.section-4kemiskpeeling {
+  display: grid;
+  width: 100%;
+  max-width: 60vw;
+  grid-template-rows: repeat(1fr, 2);
+  gap: 2rem;
+}
+
+.section-3lashlift {
+  display: grid;
+  grid-template-rows: repeat(5, auto);
+  gap: 1rem;
+  width: 100%;
+  max-width: 60vw;
+  text-align: center;
+}
+
+.section-4lashlift {
+  display: grid;
+  width: 100%;
+  max-width: 60vw;
+  grid-template-rows: repeat(1fr, 4);
+  gap: 2rem;
+}
+
+.section-3microneedling {
+  display: grid;
+  grid-template-rows: repeat(5, auto);
+  gap: 1rem;
+  width: 100%;
+  max-width: 60vw;
+  text-align: center;
+}
+
+.section-4microneedling {
+  display: grid;
+  width: 100%;
+  max-width: 60vw;
+  grid-template-rows: repeat(1fr, 10);
+  gap: 3rem;
+
+}
+
+.section-3isr {
+  display: grid;
+  grid-template-rows: repeat(4, auto);
+  gap: 1rem;
+  width: 100%;
+  max-width: 60vw;
+  text-align: center;
+}
+
+.section-4isr {
+  display: grid;
+  width: 100%;
+  max-width: 60vw;
+  grid-template-rows: repeat(1fr, 10);
+  gap: 2rem;
+}
+
+
+.section-3plasmapen {
+  display: grid;
+  grid-template-rows: repeat(7, auto);
+  gap: 1rem;
+  width: 100%;
+  max-width: 60vw;
+  text-align: center;
+}
+
+.section-4plasmapen {
+  display: grid;
+  width: 100%;
+  max-width: 60vw;
+  grid-template-rows: repeat(1fr, 10);
+  gap: 2rem;
+}
+
+.section-4-2plasmapen {
+  display: grid;
+  width: 100%;
+  max-width: 60vw;
+  grid-template-rows: repeat(1fr, 10);
+  gap: 1rem;
+}
+
+/*All other smaller div grid containers here*/
+
+.cont-flyers-huvudsida {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto auto 1fr;
+  width: 20vw;
+  background-color: white;
+  gap: 0.3rem;
+  transition: transform 0.2s;
+  box-shadow: 10px 10px 27px -22px rgba(0, 0, 0, 0.75);
+  height: 100%;
+  align-content: start;
+}
+
+.cont-flyers-huvudsida:hover {
+  transform: scale(1.05);
+}
+
+.footer-container-huvudsida {
+  display: grid;
+  grid-template-columns: auto auto;
+  text-transform: uppercase;
+  grid-template-rows: repeat(9, auto);
+  justify-items: center;
+}
+
+.ansiktsbehandling-text-ansikte {
+  display: grid;
+  grid-template-rows: repeat(3, auto);
+  gap: 0.5rem;
+  place-self: start;
+}
+
+.image-ansiktsbehandling-ansikte,
+.image-kemiskpeeling,
+.image-lashlift {
+  display: grid;
+  grid-template-columns: 50% 40%;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.tillval-ansikte {
+  display: grid;
+  grid-template-columns: 50% 40%;
+  gap: 1rem;
+}
+
+.text-biorepeel-kemiskpeeling {
+  display: grid;
+  grid-template-rows: repeat(4, auto);
+  gap: 0.9rem;
+  place-self: start;
+}
+
+.text-radians-kemiskpeeling {
+  display: grid;
+  grid-template-rows: repeat(6, auto);
+  gap: 0.9rem;
+  place-self: start;
+}
+
+.text-3-kemiskpeeling {
+  display: grid;
+  grid-template-rows: repeat(2, auto);
+  gap: 0.9rem;
+}
+
+.lashbehandling-text-lashlift {
+  display: grid;
+  grid-template-rows: repeat(2, auto);
+  gap: 0.5rem;
+  place-self: start;
+}
+
+.text-2-microneedling {
+  display: grid;
+  grid-template-rows: repeat(4, auto);
+  gap: 0.9rem;
+  place-self: start;
+}
+
+.image-microneedling,
+.image-isr,
+.image-plasmapen
+ {
+  display: grid;
+  grid-template-columns: 55% 35%;
+  width: 100%;
+  gap:1.3rem;
+  justify-content: space-between;
+}
+
+.text-3-microneedling,
+.text-3-isr,
+.text-3-plasmapen {
+  display: grid;
+  grid-template-rows: repeat(3, auto);
+  gap: 0.5rem;
+  place-self: start;
+}
+
+.text-utanbild-microneedling,
+.text-utanbild-isr {
+  display: grid;
+  grid-template-rows: auto auto;
+}
+
+.text-4-microneedling,
+.text-4-isr,
+.text-4-plasmapen {
+  display: grid;
+  grid-template-rows: repeat(4, auto);
+  gap: 0.5rem;
+  place-self: start;
+}
+
+.text-utanbild-8-microneedling {
+  display: grid;
+  grid-template-rows: repeat(8, auto);
+  gap: 1.6rem;
+}
+
+.text-isr-1 {
+  display: grid;
+  grid-template-columns: 55% 35%;
+  width: 100%;
+  justify-content: space-between;
+  max-width:60vw;
+  gap:2rem;
+  grid-template-rows: auto auto;
+}
+
+.text-2-isr {
+  display: grid;
+  grid-template-rows: repeat(2, auto);
+  gap: 0.9rem;
+  place-self: start;
+}
+
+
+
+.text-2-plasmapen {
+  display: grid;
+  grid-template-rows: repeat(2, auto);
+  gap: 0.5rem;
+  place-self: start;
+  max-width:60vw;
+}
+
+.container-4plasmapen-1 ul {
+  list-style: none;
+  display:grid;
+  gap:0.5rem;
+}
+/*All grid-items here*/
+
+.cont-flyers-huvudsida > a {
+  justify-self: center;
+  align-self: end;
+  grid-row-start: 4;
+}
+
+.footer-container-huvudsida .footer-bokahar-huvudsida {
+  grid-column-start: 1;
+  grid-column-end: -1;
+}
+
+.footer-container-huvudsida .footer-bokadirekt-huvudsida {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.footer-container-huvudsida .footer-foljoss-huvudsida {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  font-weight: 700;
+  font-size: 1.3rem;
+}
+
+.footer-container-huvudsida .footer-text-1-huvudsida {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  font-weight: 700;
+  font-size: 0.8rem;
+}
+
+.footer-container-huvudsida .footer-address-huvudsida,
+.footer-container-huvudsida .footer-telefon-huvudsida,
+.footer-container-huvudsida .footer-email-huvudsida {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  font-size: 0.8rem;
+}
+
+.footer-instagram-huvudsida {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+.text-3-microneedling ul {
+  margin-left: 2rem;
+}
+
+.text-utanbild-8-microneedling ul {
+  margin-left: 2rem;
+}
+
+/*All navbars here*/
+ol.hero-1huvudsida {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: repeat(7, auto);
+  gap: 5px;
+  list-style-type: none;
+  justify-items: center;
+  width: 100vw;
+  padding: 0.7rem;
+  width: 100%;
+}
+
+.hero-1huvudsida-element {
+  font-size: 0.65rem;
+  letter-spacing: 2.5px;
+  color: black;
+  padding: 10px;
+  text-transform: uppercase;
+}
+
+a.hero-1huvudsida-element:active,
+a.hero-1huvudsida-element:link {
+  text-decoration: none;
+}
+
+a.hero-1huvudsida-element:hover {
+  text-decoration: none;
+  color: #decaa9;
+}
+
+/*All cover pictures here*/
+.cover-picture-huvudsida,
+.cover-picture-ansikte,
+.cover-picture-kemiskpeeling,
+.cover-picture-lashlift,
+.cover-picture-microneedling,
+.cover-picture-isr,
+.cover-picture-plasmapen{
+  width: 100vw;
+  object-fit: contain;
+  overflow-clip-margin: unset;
+  overflow: hidden;
+  max-height: 100%;
+}
+
+/*Alla bilder här*/
+.navlogga-huvudsida {
+  width: 3rem;
+  object-fit: contain;
+}
+
+.cont-flyers-huvudsida-img {
+  object-fit: cover;
+  max-width: 100%;
+  padding: 0;
+}
+
+.footerlogga-huvudsida {
+  width: 15vw;
+  height: 40vh;
+  align-self: start;
+  justify-self: center;
+}
+
+.footer-instagram-huvudsida img {
+  width: 35%;
+  transition: transform 0.2s;
+}
+
+.footer-facebook-huvudsida img {
+  width: 27%;
+  transition: transform 0.2s;
+}
+
+.footer-instagram-huvudsida:hover,
+.footer-facebook-huvudsida:hover {
+  transform: scale(1.05);
+}
+
+.ansiktsbehandling-bilder-ansikte,
+.bilder-kemiskpeeling,
+.bilder-lashlift,
+.bilder-microneedling,
+.bilder-isr,
+.bilder-plasmapen {
+  max-width: 400px;
+  align-self: fill;
+  justify-self: fill;
+  height: auto;
+}
+
+h3 p {
+  font-size: 1.78em;
+}
+
+.chat-button {
+  position: fixed;
+  bottom: 20px; /* Adjust this value to control the vertical position */
+  right: 20px; /* Adjust this value to control the horizontal position */
+  background-color: #ffe3e3;
+  color: white;
+  border: none;
+  border-radius: 24px;
+  padding: 0.5rem 0.6rem;
+  font-size: 1rem;
+  cursor: pointer;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  column-gap: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon {
+  margin-right: 10px;
+  font-size: 1.5rem;
+}
+
+.chat-text {
+  align-self: center;
+}
+
+.microneedling-img {
+  width: 100vw;
+}
+
+.footer-facebook-huvudsida {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.tillval-ansikts p {
+  text-align: left;
+}
+
+/*All special text properties at the end*/
+h3.text-1huvudsida,
+.section-3ansikte h1,
+.section-3kemiskpeeling h1,
+.section-3lashlift h1,
+.section-3microneedling h1,
+.section-3isr h1,
+.section-3plasmapen h1
+{
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+h4.text-2huvudsida {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+
+p.text-3huvudsida,
+p.text-4huvudsida {
+  text-align: center;
+}
+
+.cont-flyers-huvudsida > h3 {
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.cont-flyers-huvudsida p,
+.cont-flyers-huvudsida a {
+  padding: 1rem;
+}
+
+.varning-ansikte {
+  font-size: 0.8rem;
+  font-style: italic;
+}
+
+.section-4isr h2 {
+  text-align:center;
+}
+
+.container-4isr-2 h3 {
+  text-transform: uppercase;
+}
+
+.list-text-3-plasmapen {
+  margin-left:1.5rem;
+}
+
+.text-3-isr ul,
+.section-4-2plasmapen ul {
+  margin-left:2rem;
+}
+
+.lasmer {
+  text-decoration: none;
+}
+
+.container-bilder-microneedling {
+  max-width: 400px;
+}
+.bilder-lashlift,
+.bilder-isr,
+.bilder-plasmapen {
+  max-width: 400px;
+  height: auto;
+}
+.ansiktsbehandling-bilder-ansikte {
+  max-width: 400px;
+}
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  text-decoration: none;
+  border: 2px solid #162633;
+  border-radius: 5px;
+  color: black;
+  background-color: transparent;
+  transition: background-color 0.3s, color 0.3s;
+}
+.button:hover {
+  background-color: #162633;
+  color: white;
+}
+/* .footer-facebook-huvudsida,
+.footer-instagram-huvudsida {
+  width: 20rem;
+  height: auto;
+} */
+/* ---Hamburger nav--- */
+.hamburger-container{
+  display: none;
+  cursor: pointer;
+}
+.hamburger{
+  display: none;
+}
+.nonindex-hamburger {
+  display: none;
+}
+.bar{
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: black;
+}
+/* ---Hamburger nav end--- */
+
+/* ---Preloader--- */
+.preloader {
+  background: #162633;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  transition: all 1s ease;
+}
+.preloader .logo {
+  height: 300px;
+  animation: logo 0.8s ease infinite alternate;
+}
+.preload-finish {
+  opacity: 0;
+  pointer-events: none;
+}
+@keyframes logo {
+  from{
+    transform: translateY(0px);
+  }
+  to{
+    transform: translateY(30px);
+  }
+}
+/* ---Preloader end--- */
+
+@media (max-width: 1123px) {
+
+  h3.text-1huvudsida {
+    font-size: 2.2rem;
+  }
+  .footer-container-huvudsida {
+    max-width: 100%;
+  }
+  .container-1huvudsida,
+  .container-2huvudsida,
+  .container-3huvudsida,
+  .container-4huvudsida {
+    max-width: 100vw;
+    overflow-x: hidden;
+  }
+}
+
+@media (max-width: 1024px) {
+  body {
+    overflow-x: hidden;
+  }
+  .section-1huvudsida {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    min-height: 5rem;
+  }
+  .hamburger-container{
+    display: flex;
+  }
+  .hamburger {
+    display: block;
+    margin-right: 3rem;
+    margin-left: 5px;
+  }
+  .nonindex-hamburger {
+    display: block;
+    margin-right: 3rem;
+    margin-left: 5px;
+  }
+  .hamburger-container.active .bar:nth-child(2){
+    opacity: 0;
+  }
+  .hamburger-container.active .bar:nth-child(1){
+    transform: translateY(8px) rotate(45deg);
+  }
+  .hamburger-container.active .bar:nth-child(3){
+    transform: translateY(-8px) rotate(-45deg);
+  }
+  ol.hero-1huvudsida {
+    display: flex;
+    position: fixed;
+    left: -100%;
+    top: 70px;
+    flex-direction: column;
+    background-color: rgba(238, 238, 238, 0.9);
+    width: 100%;
+    text-align: right;
+    transition: 0.3s;
+  }
+  .hero-1huvudsida-element {
+    margin: 4px 0;
+  }
+  .hero-1huvudsida.active {
+    left: 0;
+  }
+  .bigcontainer-huvudsida {
+    grid-template-columns: 1fr;
+  }
+  .section-2huvudsida {
+    max-width: 80%;
+  }
+  .cont-flyers-huvudsida {
+    width: 40vw; 
+  }
+  .section-3huvudsida {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    max-width: 100vw;
+    font-size: 1rem;
+    margin-right: 5.5rem;
+    gap: 2em;
+  }
+  .container-3huvudsida {
+    margin-left: 6rem;
+  }
+  .container-4huvudsida {
+    margin-left: 1.5rem;
+  }
+  .section-4huvudsida {
+    height: 40vh;
+    width: 100%;
+    max-width: 100vw;
+    background-color: #f0f0f0;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    overflow-x: hidden;
+  }
+  .container-5huvudsida {
+    display: flex;
+    width: 100%;
+    margin-top: 9rem;
+    align-items: left;
+    justify-content: left;
+    flex-direction: row;
+  }
+  .footerlogga-huvudsida {
+    display: none;
+  }  
+}
+@media (max-width: 883px) {
+  .section-1huvudsida {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    min-height: 5rem;
+  }
+  .hamburger-container{
+    display: flex;
+  }
+  .hamburger {
+    display: block;
+    margin-right: 2rem;
+    margin-left: 5px;
+  }
+  .nonindex-hamburger {
+    display: block;
+    margin-right: 3rem;
+    margin-left: 5px;
+  }
+  .hamburger-container.active .bar:nth-child(2){
+    opacity: 0;
+  }
+  .hamburger-container.active .bar:nth-child(1){
+    transform: translateY(8px) rotate(45deg);
+  }
+  .hamburger-container.active .bar:nth-child(3){
+    transform: translateY(-8px) rotate(-45deg);
+  }
+  ol.hero-1huvudsida {
+    display: flex;
+    position: fixed;
+    left: -100%;
+    top: 70px;
+    flex-direction: column;
+    background-color: rgba(238, 238, 238, 0.9);
+    width: 100%;
+    text-align: right;
+    transition: 0.3s;
+  }
+  .hero-1huvudsida-element {
+    margin: 4px 0;
+  }
+  .hero-1huvudsida.active {
+    left: 0;
+  }
+  .cont-flyers-huvudsida {
+    width: 70vw; 
+  }
+  .section-3huvudsida {
+    display: grid;
+    grid-template-columns: 1fr ;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    max-width: 100vw;
+    justify-content: start;
+    align-items: stretch;
+    align-content: stretch;
+  }
+  .container-4huvudsida {
+    margin-left: 3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .hamburger-container{
+    display: flex;
+  }
+  .hamburger {
+    display: block;
+    margin-right: 1rem;
+    margin-left: 10px;
+  }
+  .nonindex-hamburger{
+    display: block;
+    margin-right: 1rem;
+    margin-left: 10px;
+  }
+  .hamburger-container.active .bar:nth-child(2){
+    opacity: 0;
+  }
+  .hamburger-container.active .bar:nth-child(1){
+    transform: translateY(8px) rotate(45deg);
+  }
+  .hamburger-container.active .bar:nth-child(3){
+    transform: translateY(-8px) rotate(-45deg);
+  }
+  ol.hero-1huvudsida {
+    display: flex;
+    position: fixed;
+    left: -100%;
+    top: 70px;
+    flex-direction: column;
+    background-color: rgba(238, 238, 238, 0.94);
+    width: 100%;
+    text-align: right;
+    transition: 0.3s;
+  }
+  .hero-1huvudsida-element {
+    margin: 4px 0;
+  }
+  .hero-1huvudsida.active {
+    left: 0;
+  }
+  .bigcontainer-huvudsida {
+    grid-template-columns: 1fr;
+  }
+  .section-1huvudsida {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto;
+    max-width: 100%;
+  }
+  .section-2huvudsida {
+    max-width: 90%;
+  }
+  .section-3huvudsida {
+    display: grid;
+    grid-template-columns: 1fr ;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    max-width: 100vw;
+    justify-content: start;
+    align-items: stretch;
+    font-size: 0.9rem;
+    align-content: stretch;
+    margin-left: 1.2rem;
+  }
+  .container-3huvudsida {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    margin-left: 0;
+  }
+  .container-4huvudsida {
+    display:flex;
+    align-items: center;
+    justify-content: left;
+    margin-left: 0;
+  }
+  .section-2huvudsida {
+    max-width: 90vw;
+    width: 100%;
+    display: flex;
+    gap: 3rem;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    margin-left: 1.2rem;
+
+  }
+  p.text-3huvudsida,
+  p.text-4huvudsida {
+    text-align: left;
+  }
+  .cont-flyers-huvudsida {
+    width: 90vw;
+    background-color: white;
+    gap: 0.3rem;
+    box-shadow: 10px 10px 27px -22px rgba(0, 0, 0, 0.75);
+    height: 100%;
+    align-content: start;
+  }
+  .cont-flyers-huvudsida:hover {
+    transform: scale(1);
+  }
+  .section-4huvudsida {
+    height: 40vh;
+    width: 100%;
+    max-width: 100vw;
+    background-color: #f0f0f0;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .container-5huvudsida {
+    display: flex;
+    width: 100%;
+    margin-top: 9rem;
+    align-items: left;
+    justify-content: left;
+    flex-direction: row;
+  }
+  .footerlogga-huvudsida {
+    display: none;
+  }
+  .footer-facebook-huvudsida,
+  .footer-instagram-huvudsida {
+    width: 80;
+    height: auto;
+  }
+ 
+  .container-3microneedling,
+  .container-3kemiskpeeling,
+  .container-3ansikte,
+  .container-3lashlift,
+  .container-3isr,
+  .container-3plasmapen {
+    max-width: 100%;
+    font-size: 1.1rem;
+  }
+  .section-3microneedling,
+  .section-3kemiskpeeling,
+  .section-3ansikte,
+  .section-3lashlift,
+  .section-3isr,
+  .section-3plasmapen {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    max-width: 90vw;
+  }
+  .text-2-isr ul{
+    margin-left: 1rem;
+  }
+  .image-microneedling,
+  .image-kemiskpeeling,
+  .image-ansiktsbehandling-ansikte,
+  .image-lashlift,
+  .image-isr,
+  .image-plasmapen {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    overflow-x: hidden;
+  }
+  .section-4microneedling,
+  .section-4kemiskpeeling,
+  .section-4ansikte,
+  .section-4lashlift,
+  .section-4isr,
+  .section-4plasmapen,
+  .text-isr-1,
+  .text-2-plasmapen,
+  .section-4-2plasmapen {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+    max-width: 90vw;
+    gap: 2rem;
+    font-size: 0.9rem;
+  }
+  .text-isr-1 {
+    display:flex;
+    justify-content: center;
+  }
+  .section-4ansikte {
+    margin-top: 5rem;
+  }
+  .container-bilder-microneedling {
+    margin-top: 1rem;
+  }
+  .container-6ansikte {
+    margin-top: 3rem;
+  }
+  h3.text-1huvudsida,
+  .section-3ansikte h1,
+  .section-3kemiskpeeling h1,
+  .section-3lashlift h1,
+  .section-3microneedling h1
+  .section-3isr h1,
+  .section-3plasmapen h1 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  h4.text-2huvudsida {
+    font-size: 0.9rem;
+    text-transform: uppercase;
+  }
+
+  p.text-3huvudsida,
+  p.text-4huvudsida,
+  p.text-5,
+  .section-3microneedling p,
+  .section-3kemiskpeeling p,
+  .section-3ansikte p,
+  .section-3lashlift p,
+  .section-3isr p,
+  .section-3plasmapen p {
+    text-align: left;
+    font-size: 0.9rem;
+  }
+}
