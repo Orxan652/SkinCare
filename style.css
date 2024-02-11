@@ -543,6 +543,14 @@ a.hero-1huvudsida-element:hover {
   max-height: 100%;
 }
 
+.erbjudande202402 {
+  width: 50vw;
+  object-fit: contain;
+  overflow-clip-margin: unset;
+  overflow: hidden;
+  max-height: 100%;
+}
+
 /*Alla bilder här*/
 .navlogga-huvudsida {
   width: 3rem;
