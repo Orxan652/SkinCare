@@ -557,6 +557,10 @@ a.hero-1huvudsida-element:hover {
   object-fit: contain;
 }
 
+.loggor {
+  width: 100%;
+}
+
 .cont-flyers-huvudsida-img {
   object-fit: cover;
   max-width: 100%;
