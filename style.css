@@ -471,9 +471,10 @@ body {
   grid-column-end: 3;
 }
 
-.footer-container-huvudsida .footer-foljoss-huvudsida {
-  grid-column-start: 1;
+ .footer-foljoss-huvudsida {
+  /*grid-column-start: 1;
   grid-column-end: 3;
+  */
   font-weight: 700;
   font-size: 1.3rem;
 }
@@ -493,13 +494,25 @@ body {
   font-size: 0.8rem;
 }
 
-.footer-instagram-huvudsida {
+/*.footer-instagram-huvudsida {
   grid-column-start: 1;
   grid-column-end: 2;
   display: flex;
-  justify-content: end;
+  justify-content: start;
   align-items: center;
 }
+*/
+
+.footer-instagram-huvudsida-2 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
 
 .text-3-microneedling ul {
   margin-left: 2rem;
@@ -586,7 +599,14 @@ a.hero-1huvudsida-element:hover {
   justify-self: center;
 }
 
+/*
 .footer-instagram-huvudsida img {
+  width: 35%;
+  transition: transform 0.2s;
+}
+  */
+
+.footer-instagram-huvudsida-2 img {
   width: 35%;
   transition: transform 0.2s;
 }
@@ -596,11 +616,17 @@ a.hero-1huvudsida-element:hover {
   transition: transform 0.2s;
 }
 
+/*
 .footer-instagram-huvudsida:hover,
 .footer-facebook-huvudsida:hover {
   transform: scale(1.05);
 }
+*/
 
+.footer-instagram-huvudsida-2:hover,
+.footer-facebook-huvudsida:hover {
+  transform: scale(1.05);
+}
 .ansiktsbehandling-bilder-ansikte,
 .bilder-kemiskpeeling,
 .bilder-lashlift,
@@ -1104,7 +1130,8 @@ p.text-4huvudsida {
     display: none;
   }
   .footer-facebook-huvudsida,
-  .footer-instagram-huvudsida {
+  .footer-instagram-huvudsida,
+  .footer-instagram-huvudsida-2 {
     width: 80;
     height: auto;
   }

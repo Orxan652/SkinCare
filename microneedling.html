@@ -1,311 +1,394 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ByIsabellaK</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-6R9KSCDHM2"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ByIsabellaK</title>
-  <link rel="stylesheet" href="style.css" />
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-6R9KSCDHM2"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
+      gtag("config", "G-6R9KSCDHM2");
+    </script>
+  </head>
 
-    gtag('config', 'G-6R9KSCDHM2');
-  </script>
-</head>
+  <body>
+    <!-- Messenger Pluginprogram för chatt Code -->
+    <div id="fb-root"></div>
 
-<body>
-  <!-- Messenger Pluginprogram för chatt Code -->
-  <div id="fb-root"></div>
+    <!-- Your Pluginprogram för chatt code -->
+    <div id="fb-customer-chat" class="fb-customerchat"></div>
 
-  <!-- Your Pluginprogram för chatt code -->
-  <div id="fb-customer-chat" class="fb-customerchat">
-  </div>
+    <script>
+      var chatbox = document.getElementById("fb-customer-chat");
+      chatbox.setAttribute("page_id", "108899498593846");
+      chatbox.setAttribute("attribution", "biz_inbox");
+    </script>
 
-  <script>
-    var chatbox = document.getElementById('fb-customer-chat');
-    chatbox.setAttribute("page_id", "108899498593846");
-    chatbox.setAttribute("attribution", "biz_inbox");
-  </script>
+    <!-- Your SDK code -->
+    <script>
+      window.fbAsyncInit = function () {
+        FB.init({
+          xfbml: true,
+          version: "v18.0",
+        });
+      };
 
-  <!-- Your SDK code -->
-  <script>
-    window.fbAsyncInit = function () {
-      FB.init({
-        xfbml: true,
-        version: 'v18.0'
-      });
-    };
+      (function (d, s, id) {
+        var js,
+          fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s);
+        js.id = id;
+        js.src = "https://connect.facebook.net/sv_SE/sdk/xfbml.customerchat.js";
+        fjs.parentNode.insertBefore(js, fjs);
+      })(document, "script", "facebook-jssdk");
+    </script>
 
-    (function (d, s, id) {
-      var js, fjs = d.getElementsByTagName(s)[0];
-      if (d.getElementById(id)) return;
-      js = d.createElement(s); js.id = id;
-      js.src = 'https://connect.facebook.net/sv_SE/sdk/xfbml.customerchat.js';
-      fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));
-  </script>
-
-
-  <div class="big-container-microneedling">
-    <div class="container-1huvudsida">
-      <section class="section-1huvudsida">
-        <a href="index.html">
-          <img src="huvudsida/navlogga-huvudsida.png" class="navlogga-huvudsida" />
-        </a>
-        <nav class="hero-1huvudsida">
-          <ol class="hero-1huvudsida">
-            <li class="hero-1huvudsida-element">
-              <a href="plasmapen.html" class="hero-1huvudsida-element">Plasmapen Plaxel </a>
-            </li>
-            <li class="hero-1huvudsida-element">
-              <a href="microneedling.html" class="hero-1huvudsida-element">Microneedling</a>
-            </li>
-            <li class="hero-1huvudsida-element">
-              <a href="isr.html" class="hero-1huvudsida-element">I.S.R</a>
-            </li>
-            <li class="hero-1huvudsida-element">
-              <a href="kemiskpeeling.html" class="hero-1huvudsida-element">Kemisk Peeling</a>
-            </li>
-            <li class="hero-1huvudsida-element">
-              <a href="ansiktsbehandling.html" class="hero-1huvudsida-element">Ansiktsbehandling</a>
-            </li>
-            <li class="hero-1huvudsida-element">
-              <a href="lashlift.html" class="hero-1huvudsida-element">Lash & Brow lift</a>
-            </li>
-            <li class="hero-1huvudsida-element">
-              <a href="https://bokadirekt.se/places/by-isabella-k-48263" target="_blank"
-                class="hero-1huvudsida-element button">Boka tid</a>
-            </li>
-          </ol>
-          <div class="hamburger-container">
-            <span><strong>MENY</strong></span>
-            <div class="nonindex-hamburger">
-              <span class="bar"></span>
-              <span class="bar"></span>
-              <span class="bar"></span>
+    <div class="big-container-microneedling">
+      <div class="container-1huvudsida">
+        <section class="section-1huvudsida">
+          <a href="index.html">
+            <img
+              src="huvudsida/navlogga-huvudsida.png"
+              class="navlogga-huvudsida"
+            />
+          </a>
+          <nav class="hero-1huvudsida">
+            <ol class="hero-1huvudsida">
+              <li class="hero-1huvudsida-element">
+                <a href="plasmapen.html" class="hero-1huvudsida-element"
+                  >Plasmapen Plaxel
+                </a>
+              </li>
+              <li class="hero-1huvudsida-element">
+                <a href="microneedling.html" class="hero-1huvudsida-element"
+                  >Microneedling</a
+                >
+              </li>
+              <li class="hero-1huvudsida-element">
+                <a href="isr.html" class="hero-1huvudsida-element">I.S.R</a>
+              </li>
+              <li class="hero-1huvudsida-element">
+                <a href="kemiskpeeling.html" class="hero-1huvudsida-element"
+                  >Kemisk Peeling</a
+                >
+              </li>
+              <li class="hero-1huvudsida-element">
+                <a href="ansiktsbehandling.html" class="hero-1huvudsida-element"
+                  >Ansiktsbehandling</a
+                >
+              </li>
+              <li class="hero-1huvudsida-element">
+                <a href="lashlift.html" class="hero-1huvudsida-element"
+                  >Lash & Brow lift</a
+                >
+              </li>
+              <li class="hero-1huvudsida-element">
+                <a
+                  href="https://bokadirekt.se/places/by-isabella-k-48263"
+                  target="_blank"
+                  class="hero-1huvudsida-element button"
+                  >Boka tid</a
+                >
+              </li>
+            </ol>
+            <div class="hamburger-container">
+              <span><strong>MENY</strong></span>
+              <div class="nonindex-hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+              </div>
             </div>
-          </div>
-        </nav>
-      </section>
-    </div>
-    <div class="container-2microneedling">
-      <img alt="Ansiktsbehandling" src="microneedling/cover-picture-microneedling.png"
-        class="cover-picture-microneedling" />
-    </div>
-    <div class="container-3microneedling">
-      <section class="section-3microneedling">
-        <h1>MICRONEEDLING</h1>
-        <p>Microneedling är i dag en av de mest effektiva hud och anti-age behandlingarna i skönhetsbranschen.</p>
-        <p>Börjar det bli dags att ta itu med tidiga tecken på åldrande? Lider du av att acneärren? Med en microneedling
-          behandling kan vi hjälpa huden att både se fräschare ut och stärka sig själv igen – vare sig du är ute efter
-          att släta ut rynkor & fina linjer, fräscha upp dekolletaget, behandla djupa ärr eller andra hudförändringar.
-        </p>
-        <p>Det som gör microneedling så effektiv är bland annat behandlingens förmåga att stimulera kroppens egen
-          nyproduktion av kollagen. Kollagen är en grupp proteiner som finns naturligt i kroppen och som är nödvändigt
-          för att huden, musklerna och våra leder ska må bra. Tyvärr börjar kroppens naturliga kollagenproduktion att
-          minska redan efter 20 års ålder, vilket leder till ålderstecken som fina linjer och rynkor.</p>
-        <p>Microneedling kan bidra till att bromsa ålderstecken och föryngra huden, jämna ut pigment, förminska porer
-          och förbättra strukturen. Huden blir mjuk och får en helt ny lyster. Med metoden behandlar vi hela ansiktet,
-          hals och dekolletage och även runt ögon och på övre ögonlock! Det går att behandla ärr, struktur och
-          pigmenteringar på hela kroppen. Linjer, rynkor, slapp hud och solskador behandlas effektivt med denna metod
-          som har minimalt med konvalescens.</p>
-      </section>
-    </div>
-    <div class="container-4microneedling">
-      <section class="section-4microneedling">
-        <div class="image-microneedling">
-          <div class="text-3-microneedling">
-            <div>
-              <h3>BEHANDLINGSOMRÅDEN MED MICRONEEDLING:</h3>
-              <ul>
-                <li>Åldrad hud</li>
-                <li>Fina linjer och rynkor</li>
-                <li>Ärrbildningar (akne, kirurgiska och brännmärken)</li>
-                <li>Stora porer</li>
-                <li>Pormaska</li>
-                <li>Pigmentförändringa</li>
-                <li>Hudbristningar</li>
-                <li>Utstående hudförändringar, till exempel milie</li>
-              </ul>
-            </div>
-            <p>Microneedling behandlingen kan göras oavsett hudtyp, hudfärg, kön, ålder och årstid.</p>
-          </div>
-
-          <div class="container-bilder-microneedling">
-            <img src="microneedling/picture1-microneedling.jpg" class="bilder-microneedling" />
-          </div>
-        </div>
-        <div class="image-utanbild-microneedling">
-          <div class="text-utanbild-microneedling">
-            <h3>MICRONEEDLING Face- 1395kr</h3>
-            <h3>MICRONEEDLING Face + Hals - 1895kr</h3>
-            <h3>MICRONEEDLING Face, Hals + Dekolletage - 2195kr</h3>
-            <h3>SKALP MICRONEEDLING - 1395kr (för ökad hårväxt)</h3>
-            <p class="varning-ansikte">Ingår i behandlingen: Dubbel rengöring, peeling, microneedling med aktivt serum
-              på valt område, lugnande sheetmask, rödljusterapi, avslutande produkter.
-            </p>
-          </div>
-        </div>
-        <div class="image-microneedling">
-          <div class="text-3-microneedling">
-            <div>
-              <h3>HUR FUNGERAR MICRONEEDLING?</h3>
-              <p>Microneedling är en avancerad teknik som använder sig av tunna sterila engångsnålar för att vertikalt
-                penetrera huden genom ett vibrerande nålhuvud. När munstycket flyttas över hudytan stansas tusentals
-                mikroskopiska kanaler som stimulerar den naturliga kollagen-produktionen. En väl utförd microneedling
-                behandling återställer redan efter en behandling så mycket som upp till 4 000% mer kollagen i de
-                behandlade områdena. Kanalerna ger de fuktgivande serum som används under behandlingen fri passage djupt
-                ner i huden och stimulerar därmed kollagenet optimalt. Den ökade absorptionen av de aktiva
-                ingredienserna
-                ner i huden ger snabb läkning och återbyggnad av ny hud.</p>
-            </div>
-            <p>Det är också en säker behandlingsform. Microneedling är så exakt att vi kan behandla även känsliga
-              områden – som hud vid ögon, övre ögonlock, näsa och andra känsliga partier.</p>
-          </div>
-          <div class="container-bilder-microneedling">
-            <img src="microneedling/picture2-microneedling.jpg" class="bilder-microneedling" />
-          </div>
-        </div>
-        <div class="image-microneedling">
-          <div class="text-3-microneedling">
-            <div>
-              <h3>ÄR DENNA BEHANDLING LÄMPLIG FÖR ALLA?</h3>
-              <p>Denna metod fungerar inte för alla, vi behandlar inte dig som är gravid eller ammande, har benägenhet
-                att
-                bilda keloida ärr, har använt brun-utan-sol senaste veckan, pågår en acnebehandling med Roaccutan eller
-                kortison, har gjort botox eller fillers i det behandlade området (vänta 2v) genomgått strålbehandling
-                senaste året. eller som nyligen gjort en operation i det behandlade området och har försämrad
-                läkningsförmåga. Vi vill inte heller att du lider av blödarsjuka eller behandlas med blodförtunnande
-                mediciner (gäller även naturläkemedel)</p>
-            </div>
-            <p>Att säkerställa en korrekt behandling är en av flera viktiga anledningar att alltid vända sig till
-              legitimerade och väl auktoriserade behandlare.</p>
-
-          </div>
-          <div class="container-bilder-microneedling">
-            <img src="microneedling/picture3-microneedling.jpg" class="bilder-microneedling" />
-          </div>
-        </div>
-        <div class="image-microneedling">
-          <div class="text-4-microneedling">
-            <div>
-              <h3>KOMBINATIONSBEHANDLING MED KEMISK PEELING</h3>
-              <p>Vi rekommenderar att i samband med din microneedling-behandling även lägga in en kemisk peeling,
-                antingen
-                en vecka före behandling eller vid samma tillfälle. Då får du också en cellförnyelseprocess som
-                stimulerar
-                en positiv nybildning av celler även på hudytan.</p>
-
-            </div>
-            <div>
-              <h3>HUR MÅNGA BEHANDLINGAR BEHÖVS?</h3>
-              <p>Beroende på vilket resultat du förväntar dig, behövs olika många behandlingar. Generellt rekommenderar
-                vi
-                en grund kur på 3-6 behandlingar med 3-5 veckors mellanrum. Det är dock individuellt hur många som just
-                du
-                behöver för att uppnå dina mål och önskemål.</p>
-            </div>
-          </div>
-          <div class="container-bilder-microneedling">
-            <img src="microneedling/picture3-microneedling.jpg" class="bilder-microneedling" />
-          </div>
-        </div>
-        <div class="image-utanbild-microneedling">
-          <div class="text-utanbild-8-microneedling">
-            <div>
-              <h3>NÄR ÄR DET MÖJLIGT ATT SE RESULTAT?</h3>
-              <p>Du kan se resultat redan efter en behandling. För mer långvarigt och markant resultat behövs en grund
-                kur
-                som minimum. Huden fortsätter att byggas upp i ytterligare 6-12 månader efter avslutad kur. En väl
-                utförd
-                microneedling behandling återställer redan efter en behandling så mycket som upp till 4 000% mer
-                kollagen
-                i de behandlade områdena. För absolut bästa resultat bör produkter din hudterapeut rekommenderar
-                användas
-                under kur-perioden, som är skräddarsydda för just dina behov.
+          </nav>
+        </section>
+      </div>
+      <div class="container-2microneedling">
+        <img
+          alt="Ansiktsbehandling"
+          src="microneedling/cover-picture-microneedling.png"
+          class="cover-picture-microneedling"
+        />
+      </div>
+      <div class="container-3microneedling">
+        <section class="section-3microneedling">
+          <h1>MICRONEEDLING</h1>
+          <p>
+            Microneedling är i dag en av de mest effektiva hud och anti-age
+            behandlingarna i skönhetsbranschen.
+          </p>
+          <p>
+            Börjar det bli dags att ta itu med tidiga tecken på åldrande? Lider
+            du av att acneärren? Med en microneedling behandling kan vi hjälpa
+            huden att både se fräschare ut och stärka sig själv igen – vare sig
+            du är ute efter att släta ut rynkor & fina linjer, fräscha upp
+            dekolletaget, behandla djupa ärr eller andra hudförändringar.
+          </p>
+          <p>
+            Det som gör microneedling så effektiv är bland annat behandlingens
+            förmåga att stimulera kroppens egen nyproduktion av kollagen.
+            Kollagen är en grupp proteiner som finns naturligt i kroppen och som
+            är nödvändigt för att huden, musklerna och våra leder ska må bra.
+            Tyvärr börjar kroppens naturliga kollagenproduktion att minska redan
+            efter 20 års ålder, vilket leder till ålderstecken som fina linjer
+            och rynkor.
+          </p>
+          <p>
+            Microneedling kan bidra till att bromsa ålderstecken och föryngra
+            huden, jämna ut pigment, förminska porer och förbättra strukturen.
+            Huden blir mjuk och får en helt ny lyster. Med metoden behandlar vi
+            hela ansiktet, hals och dekolletage och även runt ögon och på övre
+            ögonlock! Det går att behandla ärr, struktur och pigmenteringar på
+            hela kroppen. Linjer, rynkor, slapp hud och solskador behandlas
+            effektivt med denna metod som har minimalt med konvalescens.
+          </p>
+        </section>
+      </div>
+      <div class="container-4microneedling">
+        <section class="section-4microneedling">
+          <div class="image-microneedling">
+            <div class="text-3-microneedling">
+              <div>
+                <h3>BEHANDLINGSOMRÅDEN MED MICRONEEDLING:</h3>
+                <ul>
+                  <li>Åldrad hud</li>
+                  <li>Fina linjer och rynkor</li>
+                  <li>Ärrbildningar (akne, kirurgiska och brännmärken)</li>
+                  <li>Stora porer</li>
+                  <li>Pormaska</li>
+                  <li>Pigmentförändringa</li>
+                  <li>Hudbristningar</li>
+                  <li>Utstående hudförändringar, till exempel milie</li>
+                </ul>
+              </div>
+              <p>
+                Microneedling behandlingen kan göras oavsett hudtyp, hudfärg,
+                kön, ålder och årstid.
               </p>
             </div>
-            <div>
-              <h3>HUR KÄNNS BEHANDLINGEN?</h3>
-              <p>Beroende på vad du vill behandla finns olika behandlingsdjup. Vid behandling med de minsta nåldjupen
-                känns det ytterst lite, om vi går djupare känns det mer, men ingen bedövning behövs.
+
+            <div class="container-bilder-microneedling">
+              <img
+                src="microneedling/picture1-microneedling.jpg"
+                class="bilder-microneedling"
+              />
+            </div>
+          </div>
+          <div class="image-utanbild-microneedling">
+            <div class="text-utanbild-microneedling">
+              <h3>MICRONEEDLING Face- 1395kr</h3>
+              <h3>MICRONEEDLING Face + Hals - 1895kr</h3>
+              <h3>MICRONEEDLING Face, Hals + Dekolletage - 2195kr</h3>
+              <h3>SKALP MICRONEEDLING - 1395kr (för ökad hårväxt)</h3>
+              <p class="varning-ansikte">
+                Ingår i behandlingen: Dubbel rengöring, peeling, microneedling
+                med aktivt serum på valt område, lugnande sheetmask,
+                rödljusterapi, avslutande produkter.
               </p>
             </div>
-            <div>
-              <h3>VILKEN KONVALESCENS HAR BEHANDLINGEN?</h3>
-              <p>Du kan vara röd i 12-48 timmar beroende på hur känslig din hud är. De flesta kan återgå till normala
-                aktiviteter dagen efter behandlingen. På grund av infektionsrisken bör du undvika att peta dig i
-                ansiktet
-                och sminka dig det närmaste dygnet efter behandling. Kroppen behöver få möjlighet att hinna stänga de
-                mikroskopiska kanaler som behandlingen öppnat upp. Tänk på att den behandlade huden är känslig för sol.
-                Direkt efter behandling bör du därför undvika solexponering, bland annat för att inte drabbas av ojämn
-                pigmentering under läkprocessen. Använd solskyddsfaktor spf50 om du inte kan undvika solen. Några dagar
-                efter behandlingen kommer du att uppleva att huden börjar kännas mjukare och se friskare ut, att den
-                blir
-                mer vital.
+          </div>
+          <div class="image-microneedling">
+            <div class="text-3-microneedling">
+              <div>
+                <h3>HUR FUNGERAR MICRONEEDLING?</h3>
+                <p>
+                  Microneedling är en avancerad teknik som använder sig av tunna
+                  sterila engångsnålar för att vertikalt penetrera huden genom
+                  ett vibrerande nålhuvud. När munstycket flyttas över hudytan
+                  stansas tusentals mikroskopiska kanaler som stimulerar den
+                  naturliga kollagen-produktionen. En väl utförd microneedling
+                  behandling återställer redan efter en behandling så mycket som
+                  upp till 4 000% mer kollagen i de behandlade områdena.
+                  Kanalerna ger de fuktgivande serum som används under
+                  behandlingen fri passage djupt ner i huden och stimulerar
+                  därmed kollagenet optimalt. Den ökade absorptionen av de
+                  aktiva ingredienserna ner i huden ger snabb läkning och
+                  återbyggnad av ny hud.
+                </p>
+              </div>
+              <p>
+                Det är också en säker behandlingsform. Microneedling är så exakt
+                att vi kan behandla även känsliga områden – som hud vid ögon,
+                övre ögonlock, näsa och andra känsliga partier.
+              </p>
             </div>
-            <div>
-              <h3>VILKEN EFTERVÅRD BEHÖVER JAG?</h3>
-              <ul>
-                <li>Undvik smink 12 h efter behandlingen</li>
-                <li>Lämna behandlingsområdet ifred minst ett par timmar efter behandlingen, var inte där och pilla med
-                  fingrar.</li>
-                <li>Se till att ha rena sängkläder, för att undvika smuts och bakterier under första två nätterna efter
-                  behandlingen.</li>
-                <li>Undvik att duscha/bada/ basta/svettas 24 h efter behandlingen.</li>
-                <li>För att förhindra hyperpigmentering bör man undvika solning (även solarium) minst 2 veckor efter
-                  behandlingen (Helst till kuren är slut), man bör även använda solskydd minst 2 veckor efter
-                  behandlingen
-                  på spf 50 även på vinterhalvåret.</li>
-                <li>Vissa kan uppleva att huden blir torr efter behandlingen, då kan du smörja in huden med en mild
-                  fuktkräm som inte innehåller starka kemikalier.</li>
-                <li>Du kan återgå till dina hudvårdsprodukter 72 h timmar efter behandlingen.</li>
-                <li>Du kan återgå till normala aktiviteter direkt efter behandlingen. Följ din behandlares
-                  rekommendationer vad angår hudvårdsprodukter och vad gäller din hudvårdsrutin.</li>
-              </ul>
+            <div class="container-bilder-microneedling">
+              <img
+                src="microneedling/picture2-microneedling.jpg"
+                class="bilder-microneedling"
+              />
             </div>
+          </div>
+          <div class="image-microneedling">
+            <div class="text-3-microneedling">
+              <div>
+                <h3>ÄR DENNA BEHANDLING LÄMPLIG FÖR ALLA?</h3>
+                <p>
+                  Denna metod fungerar inte för alla, vi behandlar inte dig som
+                  är gravid eller ammande, har benägenhet att bilda keloida ärr,
+                  har använt brun-utan-sol senaste veckan, pågår en
+                  acnebehandling med Roaccutan eller kortison, har gjort botox
+                  eller fillers i det behandlade området (vänta 2v) genomgått
+                  strålbehandling senaste året. eller som nyligen gjort en
+                  operation i det behandlade området och har försämrad
+                  läkningsförmåga. Vi vill inte heller att du lider av
+                  blödarsjuka eller behandlas med blodförtunnande mediciner
+                  (gäller även naturläkemedel)
+                </p>
+              </div>
+              <p>
+                Att säkerställa en korrekt behandling är en av flera viktiga
+                anledningar att alltid vända sig till legitimerade och väl
+                auktoriserade behandlare.
+              </p>
+            </div>
+            <div class="container-bilder-microneedling">
+              <img
+                src="microneedling/picture3-microneedling.jpg"
+                class="bilder-microneedling"
+              />
+            </div>
+          </div>
+          <div class="image-microneedling">
+            <div class="text-4-microneedling">
+              <div>
+                <h3>KOMBINATIONSBEHANDLING MED KEMISK PEELING</h3>
+                <p>
+                  Vi rekommenderar att i samband med din
+                  microneedling-behandling även lägga in en kemisk peeling,
+                  antingen en vecka före behandling eller vid samma tillfälle.
+                  Då får du också en cellförnyelseprocess som stimulerar en
+                  positiv nybildning av celler även på hudytan.
+                </p>
+              </div>
+              <div>
+                <h3>HUR MÅNGA BEHANDLINGAR BEHÖVS?</h3>
+                <p>
+                  Beroende på vilket resultat du förväntar dig, behövs olika
+                  många behandlingar. Generellt rekommenderar vi en grund kur på
+                  3-6 behandlingar med 3-5 veckors mellanrum. Det är dock
+                  individuellt hur många som just du behöver för att uppnå dina
+                  mål och önskemål.
+                </p>
+              </div>
+            </div>
+            <div class="container-bilder-microneedling">
+              <img
+                src="microneedling/picture3-microneedling.jpg"
+                class="bilder-microneedling"
+              />
+            </div>
+          </div>
+          <div class="image-utanbild-microneedling">
+            <div class="text-utanbild-8-microneedling">
+              <div>
+                <h3>NÄR ÄR DET MÖJLIGT ATT SE RESULTAT?</h3>
+                <p>
+                  Du kan se resultat redan efter en behandling. För mer
+                  långvarigt och markant resultat behövs en grund kur som
+                  minimum. Huden fortsätter att byggas upp i ytterligare 6-12
+                  månader efter avslutad kur. En väl utförd microneedling
+                  behandling återställer redan efter en behandling så mycket som
+                  upp till 4 000% mer kollagen i de behandlade områdena. För
+                  absolut bästa resultat bör produkter din hudterapeut
+                  rekommenderar användas under kur-perioden, som är
+                  skräddarsydda för just dina behov.
+                </p>
+              </div>
+              <div>
+                <h3>HUR KÄNNS BEHANDLINGEN?</h3>
+                <p>
+                  Beroende på vad du vill behandla finns olika behandlingsdjup.
+                  Vid behandling med de minsta nåldjupen känns det ytterst lite,
+                  om vi går djupare känns det mer, men ingen bedövning behövs.
+                </p>
+              </div>
+              <div>
+                <h3>VILKEN KONVALESCENS HAR BEHANDLINGEN?</h3>
+                <p>
+                  Du kan vara röd i 12-48 timmar beroende på hur känslig din hud
+                  är. De flesta kan återgå till normala aktiviteter dagen efter
+                  behandlingen. På grund av infektionsrisken bör du undvika att
+                  peta dig i ansiktet och sminka dig det närmaste dygnet efter
+                  behandling. Kroppen behöver få möjlighet att hinna stänga de
+                  mikroskopiska kanaler som behandlingen öppnat upp. Tänk på att
+                  den behandlade huden är känslig för sol. Direkt efter
+                  behandling bör du därför undvika solexponering, bland annat
+                  för att inte drabbas av ojämn pigmentering under läkprocessen.
+                  Använd solskyddsfaktor spf50 om du inte kan undvika solen.
+                  Några dagar efter behandlingen kommer du att uppleva att huden
+                  börjar kännas mjukare och se friskare ut, att den blir mer
+                  vital.
+                </p>
+              </div>
 
+              <div>
+                <h3>VILKEN EFTERVÅRD BEHÖVER JAG?</h3>
+                <ul>
+                  <li>Undvik smink 12 h efter behandlingen</li>
+                  <li>
+                    Lämna behandlingsområdet ifred minst ett par timmar efter
+                    behandlingen, var inte där och pilla med fingrar.
+                  </li>
+                  <li>
+                    Se till att ha rena sängkläder, för att undvika smuts och
+                    bakterier under första två nätterna efter behandlingen.
+                  </li>
+                  <li>
+                    Undvik att duscha/bada/ basta/svettas 24 h efter
+                    behandlingen.
+                  </li>
+                  <li>
+                    För att förhindra hyperpigmentering bör man undvika solning
+                    (även solarium) minst 2 veckor efter behandlingen (Helst
+                    till kuren är slut), man bör även använda solskydd minst 2
+                    veckor efter behandlingen på spf 50 även på vinterhalvåret.
+                  </li>
+                  <li>
+                    Vissa kan uppleva att huden blir torr efter behandlingen, då
+                    kan du smörja in huden med en mild fuktkräm som inte
+                    innehåller starka kemikalier.
+                  </li>
+                  <li>
+                    Du kan återgå till dina hudvårdsprodukter 72 h timmar efter
+                    behandlingen.
+                  </li>
+                  <li>
+                    Du kan återgå till normala aktiviteter direkt efter
+                    behandlingen. Följ din behandlares rekommendationer vad
+                    angår hudvårdsprodukter och vad gäller din hudvårdsrutin.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div class="container-5huvudsida">
+        <div class="section-4huvudsida">
+          <div class="footermore-info">
+            <footer class="footer-container-huvudsida">
+              <h3 class="footer-text-1-huvudsida">Your Skin Clinic</h3>
+              <p class="footer-address-huvudsida">Hamngatan 37, Gallerian</p>
+              <p class="footer-address-huvudsida">Stockholm, Sergels Torg</p>
+              <p class="footer-address-huvudsida">Zax City</p>
+              <p class="footer-telefon-huvudsida">TEL:073 041 25 89</p>
+              <p class="footer-telefon-huvudsida">MAIL: Info@byisabellak.se</p>
+            </footer>
           </div>
         </div>
-      </section>
-    </div>
-    <div class="container-5huvudsida">
-      <div class="section-4huvudsida">
-        <img src="huvudsida/navlogga-huvudsida.png" class="footerlogga-huvudsida" />
-        <div class="footermore-info">
-          <footer class="footer-container-huvudsida">
-            <h3 class="footer-bokahar-huvudsida">Boka här!</h3>
-            <a href="https://bokadirekt.se/places/by-isabella-k-48263" target="_blank"
-              class="footer-bokadirekt-huvudsida"><img
-                src="https://foretag.bokadirekt.se/bokatid/BokaTid_Vit_MorkBakgrund_120px.png" alt="Boka tid"
-                border="0" /></a>
-            <p class="footer-foljoss-huvudsida">Följ oss på Sociala Medier</p>
-            <a href="https://www.instagram.com/skincarebyisabellak" class="footer-instagram-huvudsida"><img
-                src="huvudsida/instagramlogga.png"></a>
-            <a href="https://www.facebook.com/profile.php?id=61550743251434" class="footer-facebook-huvudsida"><img
-                src="huvudsida/facebooklogo.png"></a>
-            <h3 class="footer-text-1-huvudsida">Advanced Skincare by IsabellaK</h3>
-            <p class="footer-address-huvudsida">Solna Centrum (Solnavägen 13, 171 45 Solna)</p>
-            <p class="footer-address-huvudsida">Solna Torg 3, plan 2</p>
-            <p class="footer-address-huvudsida">VIVACI Klinik</p>
-            <p class="footer-telefon-huvudsida">TEL:073 041 25 89</p>
-            <p class="footer-telefon-huvudsida">MAIL: Info@byisabellak.se</p>
-          </footer>
-        </div>
-        <iframe class="googlemaps"
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2033.442101238914!2d17.999143576814276!3d59.3589601086489!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465f9db946726085%3A0x250f6bd5cd0ee9b!2sVIVACI%20KLINIK!5e0!3m2!1ssv!2sse!4v1701292553662!5m2!1ssv!2sse"
-          width="240" height="180" style="border:0;" allowfullscreen="" loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade">
-        </iframe>
       </div>
     </div>
-  </div>
 
-  <script src="./app.js"></script>
-
-</body>
-
+    <script src="./app.js"></script>
+  </body>
 </html>
