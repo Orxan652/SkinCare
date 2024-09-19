@@ -81,6 +81,7 @@ body {
 .container-4ansikte,
 .container-4kemiskpeeling,
 .container-4lashlift,
+.container-5lashlift,
 .container-4microneedling,
 .container-4isr-1,
 .container-4isr-2,
@@ -212,13 +213,18 @@ body {
   gap: 2rem;
 }
 
-.section-3lashlift {
+.section-3lashlift,
+.section-5lashlift {
   display: grid;
   grid-template-rows: repeat(5, auto);
   gap: 1rem;
   width: 100%;
   max-width: 60vw;
   text-align: center;
+}
+
+.section-5lashlift {
+  margin-top: 9rem; 
 }
 
 .section-4lashlift {
@@ -651,6 +657,14 @@ h3 p {
   font-size: 1.78em;
 }
 
+div h3 {
+  text-transform: uppercase;
+}
+
+.ansiktsbehandling-text-ansikte p {
+  font-size: 0.9rem;
+}
+
 .chat-button {
   position: fixed;
   bottom: 20px; /* Adjust this value to control the vertical position */
@@ -698,6 +712,7 @@ h3.text-1huvudsida,
 .section-3ansikte h1,
 .section-3kemiskpeeling h1,
 .section-3lashlift h1,
+.section-5lashlift h1,
 .section-3microneedling h1,
 .section-3isr h1,
 .section-3plasmapen h1 {
@@ -1157,6 +1172,7 @@ p.text-4huvudsida {
   .section-3kemiskpeeling,
   .section-3ansikte,
   .section-3lashlift,
+  .section-5lashlift,
   .section-3isr,
   .section-3plasmapen {
     display: flex;
@@ -1216,6 +1232,7 @@ p.text-4huvudsida {
   .section-3ansikte h1,
   .section-3kemiskpeeling h1,
   .section-3lashlift h1,
+  .section-5lashlift h1,
   .section-3microneedling h1 .section-3isr h1,
   .section-3plasmapen h1 {
     font-size: 1.2rem;
@@ -1235,6 +1252,7 @@ p.text-4huvudsida {
   .section-3kemiskpeeling p,
   .section-3ansikte p,
   .section-3lashlift p,
+  .section-5lashlift p,
   .section-3isr p,
   .section-3plasmapen p {
     text-align: left;
