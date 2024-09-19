@@ -393,6 +393,14 @@ body {
   justify-content: space-between;
 }
 
+.image-plasmapen-modified {
+  display: grid;
+  width: 100%;
+  gap: 1.3rem;
+  justify-content: space-between;
+
+}
+
 .text-3-microneedling,
 .text-3-isr,
 .text-3-plasmapen {
